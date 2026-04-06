@@ -45,3 +45,27 @@ object manzana {
 	}
 	
 }
+//EJERCICIO 1
+object pepon {
+    var energia = 30
+  method set_energia(_energia) {
+	energia = _energia
+  }
+  
+  method energia() {
+    return energia
+  }
+  method comer(comida) {
+	energia = energia + comida.energiaQueAporta() / 2
+  }
+  
+  method volar(distancia) {
+	energia = energia - 20 - 2*distancia
+  }
+
+  method cansada() {
+	return energia < 34
+  }
+ }
+
+ 
