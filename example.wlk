@@ -68,4 +68,22 @@ object pepon {
   }
  }
 
- 
+ //EJERCICIO 2
+object rebeca {
+	var ave = pepita
+	var cantidad_cenas = 0
+
+  method entrenar(_ave){
+	ave = _ave
+	cantidad_cenas = 0
+  }
+
+  method alimentar(alimento) {
+	ave.comer(alimento)
+	cantidad_cenas = cantidad_cenas + 1
+  }
+
+  method cenas(){
+	return cantidad_cenas
+  }
+ }
